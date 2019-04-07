@@ -158,3 +158,10 @@
 
 
 
+## 声明
+
+仅用于学习个人使用，如有侵权请联系删除。E-mail：muouji@gmailcom
+
+## 参与我们
+
+如果有任何想法或需求，可以在 [issue](https://github.com/tickmao/vscode-settings/issues) 中告诉我们，欢迎各种小伙伴踊跃留言。
