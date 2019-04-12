@@ -18,12 +18,12 @@
 
     // 字号
     "editor.fontSize": 14,
-    "editor.fontWeight":  "500",
-    "editor.lineHeight": 25,
+    // "editor.fontWeight":  "500",
+    "editor.lineHeight": 24,
     "editor.tabSize": 2,
 
     // 字体
-     //"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+     "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
 
     // 软件主题配色
     "workbench.iconTheme": "material-icon-theme", // 图标主题
