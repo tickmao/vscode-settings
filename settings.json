@@ -23,7 +23,7 @@
     "editor.tabSize": 2,
 
     // 字体
-     "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+     "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
 
     // 软件主题配色
     "workbench.iconTheme": "material-icon-theme", // 图标主题
