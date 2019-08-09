@@ -17,13 +17,13 @@
     "explorer.openEditors.visible": 0,
 
     // 字号
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     // "editor.fontWeight":  "500",
-    "editor.lineHeight": 24,
+    "editor.lineHeight": 25,
     "editor.tabSize": 2,
 
     // 字体
-     "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
 
     // 软件主题配色
     "workbench.iconTheme": "material-icon-theme", // 图标主题
@@ -90,10 +90,10 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
 
     // 单击侧边栏打开文件时，关闭预览模式，直接打开文件
-    // "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": false,
 
-    // 隐藏右下角的笑脸、反馈按钮
-    "workbench.statusBar.feedback.visible": false,
+    // 导航路径
+    "breadcrumbs.enabled": true ,
 
     // 左侧列表显示横向滚动条（需要重新启动软件）
     // "workbench.tree.horizontalScrolling": true,
@@ -114,11 +114,12 @@
     "editor.snippetSuggestions": "top",
 
     // 每行输入字符长度提示线
-    "editor.rulers": [80, 100],
+    "editor.rulers": [120],
 
     // 光标宽度
     "editor.cursorWidth": 2,
     "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
 
     // terminal 光标样式
     "terminal.integrated.cursorBlinking": true,
@@ -130,9 +131,14 @@
     // 右侧的 minimap
     // "editor.minimap.enabled": false, // 隐藏
     "editor.minimap.showSlider": "always", // 一直显示滚动条
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 200,
 
     // 平滑滚动
     "editor.smoothScrolling": true,
+
+    // 空格显示
+    "editor.renderWhitespace": "all",
 
     // 禁止滚动到文件最后一行后还能继续滚动
     "editor.scrollBeyondLastLine": false,
@@ -153,7 +159,7 @@
                 // {
                 //     "scope": "log,
                 //     "settings": {
-                //         "foreground": "#FF0000"
+                //         "foreground": "#FF0000",
                 //     },
                 // }
             ]
@@ -171,7 +177,7 @@
     // 自定义文件关联
     "files.associations": {
         "*.wxss": "css",
-        "*.html": "php"
+        "*.html": "html",
     },
 
     // 搜索时需要忽略的文件或目录
@@ -179,7 +185,7 @@
         "**/node_modules": true,
         "**/bower_components": true,
         "**/.svn": true,
-        "**/.git": true
+        "**/.git": true,
     },
 
     // 忽略工程打开的文件或目录
@@ -188,11 +194,11 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
     },
 
     // 打开浏览器设置
-    "open in Browser.Default": "google chrome"
+    "open in Browser.Default": "google chrome",
 
     //--------------------------------------------------
     // 内置插件配置
@@ -203,14 +209,15 @@
         "editor.quickSuggestions": {
             "other": true,
             "comments": false,
-            "strings": true
+            "strings": true,
         },
-        "editor.quickSuggestionsDelay": 500
+        "editor.quickSuggestionsDelay": 500,
     },
 
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
-    }
+    },
+    "liveServer.settings.donotShowInfoMsg": true
 }
