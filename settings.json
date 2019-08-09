@@ -155,14 +155,14 @@
             "strings": "#5CAB7D",
             "functions": "#ff7473",
             "numbers": "#ffc952",
-            "textMateRules": [
+            // "textMateRules": [
                 // {
                 //     "scope": "log,
                 //     "settings": {
                 //         "foreground": "#FF0000",
                 //     },
                 // }
-            ]
+            // ]
         }
     },
 
