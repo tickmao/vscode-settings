@@ -18,7 +18,7 @@
 
     // 字号
     "editor.fontSize": 15,
-    // "editor.fontWeight":  "500",
+    "editor.fontWeight":  "500",
     "editor.lineHeight": 25,
     "editor.tabSize": 2,
 
@@ -198,7 +198,7 @@
     },
 
     // 打开浏览器设置
-    "open in Browser.Default": "google chrome",
+    "open-in-browser.default": "Google Chrome",
 
     //--------------------------------------------------
     // 内置插件配置
