@@ -1,7 +1,11 @@
 {
     //--------------------------------------------------
-    // 软件基本设置
+    // Author: Tickmao
+    // Emial: lyle.lypm@gmail.com
+    // Blog: https://www.tickmao.com
     //--------------------------------------------------
+
+    // ** 软件基本设置 **
 
     // 自定义标题栏
     //"window.nativeTabs": true, // 仅适用于 macOS Sierra
@@ -18,71 +22,77 @@
 
     // 字号
     "editor.fontSize": 15,
-    "editor.fontWeight":  "500",
-    "editor.lineHeight": 25,
-    "editor.tabSize": 2,
+    // "editor.fontWeight":  "500",
+    "editor.lineHeight": 32,
+    "editor.tabSize": 4,
 
     // 字体
     "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
 
     // 软件主题配色
     "workbench.iconTheme": "material-icon-theme", // 图标主题
-    "workbench.colorTheme": "One Dark Pro", // 颜色主题
+    "workbench.colorTheme": "Dracula", // 颜色主题
     "workbench.colorCustomizations": {
-        "[One Dark Pro]": {
+        "[Dracula]": {
             // 编辑区域背景
-            "editor.background": "#2E2E2E",
+            "editor.background": "#282A36",
+            "editor.foreground": "#c7d4dd",
             // 侧边栏
-            "sideBar.background": "#2E2E2E",
-            "sideBar.foreground": "#999",
-            "sideBar.border": "#2E2E2E",
+            "sideBar.background": "#21232D",
+            "sideBar.foreground": "#c7d4dd",
+            "sideBar.border": "#202020",
             // 侧边栏列表
-            "list.inactiveSelectionBackground": "#32363d",
+            "list.inactiveSelectionBackground": "#282A36",
             "list.inactiveSelectionForeground": "#dfdfdf",
-            "list.hoverBackground": "#32363d",
+            "list.hoverBackground": "#282A36",
             "list.hoverForeground": "#dfdfdf",
             // peek 窗口
             "peekView.border": "#5b99fc9c",
             // 顶部 tab 栏
-            "tab.border": "#2e2e2e",
-            "tab.activeBackground": "#2e2e2e",
-            "tab.activeForeground": "#cfcfcf",
-            "tab.activeBorder": "#5b99fcb9",
-            "tab.hoverBackground": "#2e2e2e",
-            "tab.hoverBorder": "#5b99fcb9",
+            // "tab.border": "#5D72F3",
+            "tab.activeBackground": "#282A36",
+            "tab.activeForeground": "#c7d4dd",
+            "tab.inactiveBackground": "#21232D",
+            "tab.activeBorder": "#5D72F3",
+            "tab.hoverBackground": "#282A36",
+            // "tab.hoverBorder": "#5b99fcb9",
             "tab.inactiveForeground": "#8e8e8e",
             // 最左侧工具栏
-            "activityBar.background": "#2e2e2e",
+            "activityBar.background": "#21232D",
             // 状态栏
-            "statusBar.background": "#2e2e2e",
+            "statusBar.background": "#21232D",
+            "statusBar.foreground": "#c7d4dd",
             // panel 窗口
-            "panelTitle.activeBorder": "#5b99fc5b",
-            "panelTitle.activeForeground": "#cfcfcf",
+            // "panelTitle.activeBorder": "#5b99fc5b",
+            "panelTitle.activeForeground": "#6d819c",
             // 光标
             "editorCursor.foreground": "#84B1ED",
             // 当前行
-            "editor.lineHighlightBackground": "#32363d",
-            //
+            "editor.lineHighlightBackground": "#393C4C",
+            //缩进参考线
             // "editorIndentGuide.activeBackground": "#5b99fc33",
             // 行号栏的当前行
-            "editorLineNumber.activeForeground": "#9CA5B4",
+            "editorLineNumber.activeForeground": "#bfcbe0",
             // 行号
-            "editorLineNumber.foreground": "#777",
+            "editorLineNumber.foreground": "#666",
             // 标尺
             "editorRuler.foreground": "#3f3f3f",
             // 快捷提示窗口
             "editorSuggestWidget.highlightForeground": "#84B1ED",
             "editorSuggestWidget.selectedBackground": "#333f5c",
             // 单击一个词时，其它相同单词
-            "editor.selectionHighlightBackground": "#ffe7921c",
-            "editor.selectionBackground": "#434e61c9",
-            // "editor.selectionHighlightBorder": "#90e97259",
+            "editor.selectionHighlightBackground": "#bc92ff1c",
+            "editor.selectionBackground": "#70697ec9",
+            "editor.selectionHighlightBorder": "#b5f1a159",
             // terminal 中的光标
             "terminalCursor.foreground": "#84B1ED",
             // 侧边栏中一块区域的标题
-            "sideBarSectionHeader.background": "#32363d",
+            "sideBarSectionHeader.background": "#21232D",
             // 区域获取焦点时
             "focusBorder": "#5b99fc36",
+            // 标题栏颜色
+            "titleBar.activeBackground": "#21232D",
+            "titleBar.activeForeground":"#c7d4dd"
         }
     },
 
@@ -91,9 +101,6 @@
 
     // 单击侧边栏打开文件时，关闭预览模式，直接打开文件
     "workbench.editor.enablePreview": false,
-
-    // 导航路径
-    "breadcrumbs.enabled": true ,
 
     // 左侧列表显示横向滚动条（需要重新启动软件）
     // "workbench.tree.horizontalScrolling": true,
@@ -138,7 +145,7 @@
     "editor.smoothScrolling": true,
 
     // 空格显示
-    "editor.renderWhitespace": "all",
+    // "editor.renderWhitespace": "all",
 
     // 禁止滚动到文件最后一行后还能继续滚动
     "editor.scrollBeyondLastLine": false,
@@ -146,38 +153,21 @@
     // 禁止链接文字可点击，取消下划线
     "editor.links": false,
 
-    // 基于编辑器设置的颜色主题，自定义语法着色
-    "editor.tokenColorCustomizations": {
-        "[One Dark Pro]": {
-            "comments": "#6E7783",
-            "keywords": "#F16B6F",
-            "variables": "#EFDC05",
-            "strings": "#5CAB7D",
-            "functions": "#ff7473",
-            "numbers": "#ffc952",
-            "textMateRules": [
-                // {
-                //     "scope": "log,
-                //     "settings": {
-                //         "foreground": "#FF0000",
-                //     },
-                // }
-            ]
-        }
-    },
+    // 缩进参考线
+    "editor.renderIndentGuides": false,
 
     // 禁止提交匿名数据（需要重新启动软件）
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
 
     // 自动保存设置
-    // "files.autoSave": "afterDelay",
-    // "files.autoSaveDelay": 1000,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
 
     // 自定义文件关联
     "files.associations": {
         "*.wxss": "css",
-        "*.html": "html",
+        "*.html": "html"
     },
 
     // 搜索时需要忽略的文件或目录
@@ -185,7 +175,7 @@
         "**/node_modules": true,
         "**/bower_components": true,
         "**/.svn": true,
-        "**/.git": true,
+        "**/.git": true
     },
 
     // 忽略工程打开的文件或目录
@@ -194,7 +184,7 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true,
+        "**/.DS_Store": true
     },
 
     // 打开浏览器设置
@@ -209,15 +199,17 @@
         "editor.quickSuggestions": {
             "other": true,
             "comments": false,
-            "strings": true,
+            "strings": true
         },
-        "editor.quickSuggestionsDelay": 500,
+        "editor.quickSuggestionsDelay": 500
     },
 
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact",
+        "javascript": "javascriptreact"
     },
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "breadcrumbs.enabled": false
 }
