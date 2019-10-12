@@ -3,11 +3,7 @@
 
 ![vscode](https://ae01.alicdn.com/kf/H87a8d6b48c4b40259b4a4007806638b7g.png)
 
-
-
 ### 基于Dracula编辑器主题和material-icon-theme的图标主题的个人编辑器定制页面。
-
-
 
 > settings.json 文件物理存储位置
 >
@@ -85,8 +81,6 @@
             "titleBar.activeForeground":"#c7d4dd"
         }
     },
-
-
 
 ## 声明
 
