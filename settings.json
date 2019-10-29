@@ -73,8 +73,8 @@
             "statusBar.foreground": "#c7d4dd",
             "statusBar.border" : "#292D3E",
             // panel 窗口
-            // "panelTitle.activeBorder": "#5b99fc5b",
-            "panelTitle.activeForeground": "#6d819c",
+            "panel.background": "#292D3E",
+            "panel.border":"#292D3E",
             // 光标
             "editorCursor.foreground": "#84B1ED",
             // 当前行
@@ -94,8 +94,9 @@
             "editor.selectionHighlightBackground": "#70697ec9",
             "editor.selectionBackground": "#70697ec9",
             "editor.selectionHighlightBorder": "#b5f1a159",
-            // terminal 中的光标
+            // terminal
             "terminalCursor.foreground": "#84B1ED",
+            "terminal.background": "#292D3E",
             // 侧边栏中一块区域的标题
             "sideBarSectionHeader.background": "#292D3E",
             "sideBarSectionHeader.border": "#292D3E",
