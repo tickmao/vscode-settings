@@ -17,8 +17,10 @@
     // 隐藏最左侧的工具栏
     // "workbench.activityBar.visible": false,
 
-    // 隐藏左侧边栏上的 OpenEditors
+    // 左侧边栏
     "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": false,
 
     // 字号
     "editor.fontSize": 15,
@@ -133,9 +135,6 @@
 
     // 文件对比窗口，忽略空白字符
     "diffEditor.ignoreTrimWhitespace": true,
-
-    // 隐藏导航路径设置
-    "breadcrumbs.enabled": false,
 
     // 编辑器中，快速提示框的位置
     "editor.snippetSuggestions": "top",
@@ -284,5 +283,4 @@
     "sync.forceDownload": true,
     "sync.quietSync": true,
     "sync.gist": "5a99545bcd241238242ddfb82e586b44",
-    "window.zoomLevel": 0,
 }
