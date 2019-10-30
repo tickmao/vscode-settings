@@ -1,7 +1,7 @@
 # vscode-settings
 个人vscode定制设置
 
-![vscode](https://ae01.alicdn.com/kf/H87a8d6b48c4b40259b4a4007806638b7g.png)
+![vscode](https://ae01.alicdn.com/kf/H346f211dd631410db082021aca9b1055H.jpg)
 
 ### 基于Dracula编辑器主题和material-icon-theme的图标主题的个人编辑器定制页面。
 
