@@ -23,7 +23,7 @@
     "breadcrumbs.enabled": false,
 
     // 字号
-    "editor.fontSize": 15,
+    "editor.fontSize": 13,
     "editor.fontWeight":  "500",
     "editor.lineHeight": 32,
 
@@ -74,6 +74,7 @@
             "statusBar.background": "#292D3E",
             "statusBar.foreground": "#c7d4dd",
             "statusBar.border" : "#292D3E",
+            "statusBar.noFolderBackground":"#292D3E",
             // panel 窗口
             "panel.background": "#292D3E",
             "panel.border":"#292D3E",
