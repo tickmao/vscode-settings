@@ -1,287 +1,322 @@
 {
-    //--------------------------------------------------
-    // Author: Tickmao
-    // Emial: lyle.lypm@gmail.com
-    // Blog: https://www.tickmao.com
-    //--------------------------------------------------
+  //--------------------------------------------------
+  // Author: Tickmao
+  // Emial: lyle.lypm@gmail.com
+  // Blog: https://www.tickmao.com
+  //--------------------------------------------------
 
-    // ** 软件基本设置 **
+  // ** 软件基本设置 **
 
-    // 自定义标题栏
-    //"window.nativeTabs": true, // 仅适用于 macOS Sierra
-    "window.title": "${activeEditorLong}${separator}${rootName}",
+  // 自定义标题栏
+  //"window.nativeTabs": true, // 仅适用于 macOS Sierra
+  "window.title": "${activeEditorLong}${separator}${rootName}",
 
-    // 保存文件时，去除行尾空格
-    "files.trimTrailingWhitespace": true,
+  // 保存文件时，去除行尾空格
+  "files.trimTrailingWhitespace": true,
 
-    // 隐藏最左侧的工具栏
-    // "workbench.activityBar.visible": false,
+  // 隐藏最左侧的工具栏
+  // "workbench.activityBar.visible": false,
 
-    // 左侧边栏
-    "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 0,
-    "breadcrumbs.enabled": false,
+  // 左侧边栏
+  "explorer.openEditors.visible": 0,
+  "window.zoomLevel": 0,
 
-    // 字号
-    "editor.fontSize": 13,
-    "editor.fontWeight":  "500",
-    "editor.lineHeight": 32,
+  // 字号
+  "editor.fontSize": 15,
+  // "editor.fontWeight":  "500",
+  "editor.lineHeight": 27,
+  "editor.detectIndentation": false,
 
-    // Tab显示为4字符
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false,
+  // 字体
+  "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
 
-    // 字体
-    "editor.fontFamily": "'Fira Code', Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-
-    // 软件主题配色
-    "workbench.iconTheme": "material-icon-theme", // 图标主题
-    "workbench.colorTheme": "Dracula", // 颜色主题
-    "workbench.colorCustomizations": {
-        "[Dracula]": {
-            // 编辑区域背景
-            "editor.background": "#292D3E",
-            "editor.foreground": "#c7d4dd",
-            // 侧边栏
-            "sideBar.background": "#292D3E",
-            "sideBar.foreground": "#c7d4dd",
-            "sideBar.border": "#292D3E",
-            // 侧边栏列表
-            "list.inactiveSelectionBackground": "#292D3E",
-            "list.inactiveSelectionForeground": "#dfdfdf",
-            "list.hoverBackground": "#292D3E",
-            "list.hoverForeground": "#dfdfdf",
-            // peek 窗口
-            "peekView.border": "#5b99fc9c",
-            // 顶部 tab 栏
-            "tab.border": "#292D3E",
-            "tab.activeBackground": "#292D3E",
-            "tab.activeForeground": "#c7d4dd",
-            "tab.inactiveBackground": "#292D3E",
-            "tab.hoverBackground": "#292D3E",
-            "tab.unfocusedHoverBackground": "#292D3E",
-            "tab.hoverBorder": "#5b99fcb9",
-            "tab.inactiveForeground": "#8e8e8e",
-            "editorGroupHeader.tabsBackground": "#292D3E",
-            "editorGroupHeader.tabsBorder":"#292D3E",
-            "editorGroup.border": "#292D3E",
-            "contrastBorder":"#292D3E",
-            // 最左侧工具栏
-            "activityBar.background": "#292D3E",
-            "activityBar.foreground": "#c7d4dd",
-            "activityBar.border": "#292D3E",
-            // 状态栏
-            "statusBar.background": "#292D3E",
-            "statusBar.foreground": "#c7d4dd",
-            "statusBar.border" : "#292D3E",
-            "statusBar.noFolderBackground":"#292D3E",
-            // panel 窗口
-            "panel.background": "#292D3E",
-            "panel.border":"#292D3E",
-            // 光标
-            "editorCursor.foreground": "#84B1ED",
-            // 当前行
-            "editor.lineHighlightBackground": "#393C4C",
-            //缩进参考线
-            // "editorIndentGuide.activeBackground": "#5b99fc33",
-            // 行号栏的当前行
-            "editorLineNumber.activeForeground": "#dabfe0",
-            // 行号
-            "editorLineNumber.foreground": "#7e7d7e",
-            // 标尺
-            "editorRuler.foreground": "#7c5881",
-            // 快捷提示窗口
-            "editorSuggestWidget.highlightForeground": "#84B1ED",
-            "editorSuggestWidget.selectedBackground": "#333f5c",
-            // 单击一个词时，其它相同单词
-            "editor.selectionHighlightBackground": "#70697ec9",
-            "editor.selectionBackground": "#70697ec9",
-            "editor.selectionHighlightBorder": "#b5f1a159",
-            // terminal
-            "terminalCursor.foreground": "#84B1ED",
-            "terminal.background": "#292D3E",
-            // 侧边栏中一块区域的标题
-            "sideBarSectionHeader.background": "#292D3E",
-            "sideBarSectionHeader.border": "#292D3E",
-            // 区域获取焦点时
-            "focusBorder": "#5b99fc36",
-            // 标题栏颜色
-            "titleBar.activeBackground": "#292D3E",
-            "titleBar.activeForeground":"#c7d4dd",
-            "titleBar.inactiveBackground": "#292D3E",
-            "titleBar.inactiveForeground": "#c7d4dd",
-            //滚动
-            "scrollbar.shadow": "#292D3E",
-            "editorOverviewRuler.border":"#292D3E"
-        }
-    },
-
-    // 快速打开文件时，关闭预览模式，直接打开文件
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-
-    // 单击侧边栏打开文件时，关闭预览模式，直接打开文件
-    "workbench.editor.enablePreview": false,
-
-    // 左侧列表显示横向滚动条（需要重新启动软件）
-    // "workbench.tree.horizontalScrolling": true,
-
-    // 隐藏 tab 栏文件名左侧的文件类型图标
-    // "workbench.editor.showIcons": false,
-
-    // 使用 ctrl 或 command 多选
-    "editor.multiCursorModifier": "ctrlCmd",
-
-    // 新打开 vscode 时，编辑器创建新文件
-    "workbench.startupEditor": "newUntitledFile",
-
-    // 文件对比窗口，忽略空白字符
-    "diffEditor.ignoreTrimWhitespace": true,
-
-    // 编辑器中，快速提示框的位置
-    "editor.snippetSuggestions": "top",
-
-    // 每行输入字符长度提示线
-    "editor.rulers": [120],
-
-    // 光标宽度
-    "editor.cursorWidth": 2,
-    "editor.cursorBlinking": "smooth",
-    "editor.cursorSmoothCaretAnimation": true,
-
-    // terminal（终端） 设置
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-
-    // 当前行对应的行号栏也高亮显示
-    "editor.renderLineHighlight": "all",
-
-    // 右侧的 minimap
-    // "editor.minimap.enabled": false, // 隐藏
-    "editor.minimap.showSlider": "always", // 一直显示滚动条
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.maxColumn": 200,
-
-    // 平滑滚动
-    "editor.smoothScrolling": true,
-
-    // 空格显示
-    // "editor.renderWhitespace": "all",
-
-    // 禁止滚动到文件最后一行后还能继续滚动
-    "editor.scrollBeyondLastLine": false,
-
-    // 禁止链接文字可点击，取消下划线
-    "editor.links": false,
-
-    // 缩进参考线
-    "editor.renderIndentGuides": false,
-
-    // 禁止提交匿名数据（需要重新启动软件）
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-
-    // 自动保存设置
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-
-    // 自定义文件关联
-    "files.associations": {
-        "*.wxss": "css",
-        "*.html": "html"
-    },
-
-    // 搜索时需要忽略的文件或目录
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/.svn": true,
-        "**/.git": true
-    },
-
-    // 忽略工程打开的文件或目录
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true
-    },
-
-    //--------------------------------------------------
-    // 内置插件配置
-    //--------------------------------------------------
-
-    // html 中 style 属性里写 css 快速提示
-    "[html]": {
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": true
-        },
-        "editor.quickSuggestionsDelay": 500
-    },
-
-    // Emmet
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-
-    // #eslint配置，需安装eslint插件
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-    {
-        "language": "html",
-        "autoFix": true
-    },
-    {
-        "language": "vue",
-        "autoFix": true
-    }
-],
-
-    // Prettier 设置，需要安装Prettier插件
-    //让prettier使用eslint的代码格式进行校验
-    "prettier.eslintIntegration": true,
-    // 去掉代码结尾的分号
-    "prettier.semi": false,
-    //使用单引号替代双引号
-    "prettier.singleQuote": true,
-
-    // 让函数(名)和后面的括号之间加个空格
-     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    // #vetur配置，需安装vetur插件
-     "vetur.format.defaultFormatter.html": "js-beautify-html",
-    // 让vue中的js按编辑器自带的ts格式进行格式化
-     "vetur.format.defaultFormatter.js": "vscode-typescript",
-     "vetur.format.defaultFormatter.ts": "vscode-typescript",
-     "vetur.format.defaultFormatterOptions": {
-      "js-beautify-html": {
-         "wrap_attributes": "force-aligned"
-      // vue组件中html代码格式化样式
-    }
+  // 软件主题配色
+  "workbench.iconTheme": "material-icon-theme", // 图标主题
+  "workbench.colorTheme": "Dracula", // 颜色主题
+  "workbench.colorCustomizations": {
+      "[Dracula]": {
+          // 编辑区域背景
+          "editor.background": "#292D3E",
+          "editor.foreground": "#c7d4dd",
+          // 侧边栏
+          "sideBar.background": "#292D3E",
+          "sideBar.foreground": "#c7d4dd",
+          "sideBar.border": "#292D3E",
+          // 侧边栏列表
+          "list.inactiveSelectionBackground": "#292D3E",
+          "list.inactiveSelectionForeground": "#dfdfdf",
+          "list.hoverBackground": "#292D3E",
+          "list.hoverForeground": "#dfdfdf",
+          // peek 窗口
+          "peekView.border": "#5b99fc9c",
+          // 顶部 tab 栏
+          "tab.border": "#292D3E",
+          "tab.activeBackground": "#292D3E",
+          "tab.activeForeground": "#c7d4dd",
+          "tab.inactiveBackground": "#292D3E",
+          "tab.hoverBackground": "#292D3E",
+          "tab.unfocusedHoverBackground": "#292D3E",
+          "tab.hoverBorder": "#5b99fcb9",
+          "tab.inactiveForeground": "#8e8e8e",
+          "editorGroupHeader.tabsBackground": "#292D3E",
+          "editorGroupHeader.tabsBorder":"#292D3E",
+          "editorGroup.border": "#292D3E",
+          "contrastBorder":"#292D3E",
+          // 最左侧工具栏
+          "activityBar.background": "#292D3E",
+          "activityBar.foreground": "#c7d4dd",
+          "activityBar.border": "#292D3E",
+          // 状态栏
+          "statusBar.background": "#292D3E",
+          "statusBar.foreground": "#c7d4dd",
+          "statusBar.border" : "#292D3E",
+          "statusBar.noFolderBackground": "#292D3E",
+          // panel 窗口
+          "panel.background": "#292D3E",
+          "panel.border":"#292D3E",
+          // 光标
+          "editorCursor.foreground": "#84B1ED",
+          // 当前行
+          "editor.lineHighlightBackground": "#393C4C",
+          //缩进参考线
+          // "editorIndentGuide.activeBackground": "#5b99fc33",
+          // 行号栏的当前行
+          "editorLineNumber.activeForeground": "#dabfe0",
+          // 行号
+          "editorLineNumber.foreground": "#7e7d7e",
+          // 标尺
+          "editorRuler.foreground": "#7c5881",
+          // 快捷提示窗口
+          "editorSuggestWidget.highlightForeground": "#84B1ED",
+          "editorSuggestWidget.selectedBackground": "#333f5c",
+          // 单击一个词时，其它相同单词
+          "editor.selectionHighlightBackground": "#70697ec9",
+          "editor.selectionBackground": "#70697ec9",
+          "editor.selectionHighlightBorder": "#b5f1a159",
+          // terminal
+          "terminalCursor.foreground": "#84B1ED",
+          "terminal.background": "#292D3E",
+          // 侧边栏中一块区域的标题
+          "sideBarSectionHeader.background": "#292D3E",
+          "sideBarSectionHeader.border": "#292D3E",
+          // 区域获取焦点时
+          "focusBorder": "#5b99fc36",
+          // 标题栏颜色
+          "titleBar.activeBackground": "#292D3E",
+          "titleBar.activeForeground":"#c7d4dd",
+          "titleBar.inactiveBackground": "#292D3E",
+          "titleBar.inactiveForeground": "#c7d4dd",
+          //滚动
+          "scrollbar.shadow": "#292D3E",
+          "editorOverviewRuler.border":"#292D3E",
+      }
   },
 
-    // #liveServer配置，需安装liveServer插件，未安装则忽略
-    //设置本地服务的端口号
-    "liveServer.settings.port": 3005,
-    //设置根目录，也就是打开的文件会在该目录下找
-    "liveServer.settings.root": "/",
-    //设置默认打开的浏览器
-    "liveServer.settings.CustomBrowser": "chrome",
-    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
-    "liveServer.settings.NoBrowser": false,
-    "liveServer.settings.donotShowInfoMsg": true,
+  // 快速打开文件时，关闭预览模式，直接打开文件
+  "workbench.editor.enablePreviewFromQuickOpen": false,
 
-    // 打开浏览器设置
-    "open-in-browser.default": "Google Chrome",
+  // 单击侧边栏打开文件时，关闭预览模式，直接打开文件
+  "workbench.editor.enablePreview": false,
 
-    // vscode同步设置，可自行设置
-    "sync.autoUpload": true,
-    "sync.forceDownload": true,
-    "sync.quietSync": true,
-    "sync.gist": "5a99545bcd241238242ddfb82e586b44"
+  // 左侧列表显示横向滚动条（需要重新启动软件）
+  // "workbench.tree.horizontalScrolling": true,
+
+  // 隐藏 tab 栏文件名左侧的文件类型图标
+  // "workbench.editor.showIcons": false,
+
+  // 使用 ctrl 或 command 多选
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // 新打开 vscode 时，编辑器创建新文件
+  "workbench.startupEditor": "newUntitledFile",
+
+  // 文件对比窗口，忽略空白字符
+  "diffEditor.ignoreTrimWhitespace": true,
+
+  // 编辑器中，快速提示框的位置
+  "editor.snippetSuggestions": "top",
+
+  // 每行输入字符长度提示线
+  "editor.rulers": [120],
+
+  // 光标宽度
+  "editor.cursorWidth": 2,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+
+  // terminal（终端） 设置
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "#terminal.integrated.profiles.windows#": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+  // 当前行对应的行号栏也高亮显示
+  "editor.renderLineHighlight": "all",
+
+  // 右侧的 minimap
+  // "editor.minimap.enabled": false, // 隐藏
+  "editor.minimap.showSlider": "always", // 一直显示滚动条
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+
+  // 平滑滚动
+  "editor.smoothScrolling": true,
+
+  // 空格显示
+  // "editor.renderWhitespace": "all",
+
+  // 禁止滚动到文件最后一行后还能继续滚动
+  "editor.scrollBeyondLastLine": false,
+
+  // 禁止链接文字可点击，取消下划线
+  "editor.links": false,
+
+  // 自动保存设置
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // 自定义文件关联
+  "files.associations": {
+      "*.wxss": "css",
+      "*.html": "html",
+  },
+
+  // 搜索时需要忽略的文件或目录
+  "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "**/.svn": true,
+      "**/.git": true,
+  },
+
+  // 忽略工程打开的文件或目录
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+  },
+
+  //--------------------------------------------------
+  // 内置插件配置
+  //--------------------------------------------------
+
+  // html 中 style 属性里写 css 快速提示
+  // "[html]": {
+  //     "editor.quickSuggestions": {
+  //         "other": true,
+  //         "comments": false,
+  //         "strings": true,
+  //     },
+  //     "editor.quickSuggestionsDelay": 500,
+  // },
+
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+  },
+
+  // Prettier 设置，需要安装Prettier插件
+  "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  //让prettier使用eslint的代码格式进行校验
+  "prettier.eslintIntegration": true,
+  // 去掉代码结尾的分号
+  "prettier.semi": false,
+  //使用单引号替代双引号
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 999,
+  "prettier.tabWidth": 4,
+  "prettier.proseWrap": "never",
+  "prettier.trailingComma": "none",
+  "editor.quickSuggestions": {
+      "strings": true
+  },
+  // 让函数(名)和后面的括号之间加个空格
+   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // #vetur配置，需安装vetur插件
+   "vetur.format.defaultFormatter.html": "js-beautify-html",
+  // 让vue中的js按编辑器自带的ts格式进行格式化
+   "vetur.format.defaultFormatter.js": "vscode-typescript",
+   "vetur.format.defaultFormatter.ts": "vscode-typescript",
+   "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+       "wrap_attributes": "force-aligned",
+    // vue组件中html代码格式化样式
+  }
+},
+
+  // #liveServer配置，需安装liveServer插件，未安装则忽略
+  //设置本地服务的端口号
+  "liveServer.settings.port": 3005,
+  //设置根目录，也就是打开的文件会在该目录下找
+  "liveServer.settings.root": "/",
+  //设置默认打开的浏览器
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
+  "liveServer.settings.NoBrowser": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // 打开浏览器设置
+  "open-in-browser.default": "Google Chrome",
+
+  // vscode同步设置，可自行设置
+  "sync.autoUpload": true,
+  "sync.forceDownload": true,
+  "sync.quietSync": true,
+  "sync.gist": "5a99545bcd241238242ddfb82e586b44",
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.renderWhitespace": "none",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "#terminal.integrated.profiles.osx#": "/bin/zsh",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "python.languageServer": "Default",
+  "security.workspace.trust.untrustedFiles": "open",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "tabnine.experimentalAutoImports": true,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "mssql.connections": [],
+  "redhat.telemetry.enabled": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.inlineSuggest.enabled": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path.windows": "C:\\Users\\Tickmao\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
+    "vscode-kubernetes.minikube-path.windows": "C:\\Users\\Tickmao\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "yaml.disableAdditionalProperties": true,
+  "yaml.disableDefaultProperties": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.guides.indentation": true,
+  "settingsSync.ignoredExtensions": [
+
+  ]
 }
