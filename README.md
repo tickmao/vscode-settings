@@ -97,9 +97,11 @@
         }
     },
 
-## 声明
+## Author
 
-仅用于学习个人使用，如有侵权请联系删除。E-mail：[lyle.lypm@gmail.com](mailto:lyle.lypm@gmail.com)
+ADrules ©[Tickmao](https://blog.tickmao.com), Released under the MIT License.
+
+Blog @[Tickmao](https://blog.tickmao.com) · GitHub @[Tickmao](https://github.com/tickmao) · Twitter @[Tickmao](https://twitter.com/tickmao)
 
 ## 参与我们
 
