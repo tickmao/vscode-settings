@@ -1,7 +1,7 @@
 # vscode-settings
 个人vscode定制设置
 
-[![Clean-Shot-2025-10-15-at-15-18-31-2x.png](https://i.postimg.cc/0jCt3hnq/Clean-Shot-2025-10-15-at-15-18-31-2x.png)](https://postimg.cc/m1tN1XKd)
+[![Clean-Shot-2025-10-15-at-15-24-49-2x.png](https://i.postimg.cc/44MnHnQx/Clean-Shot-2025-10-15-at-15-24-49-2x.png)](https://postimg.cc/CdGwWh23)
 
 ### 基于Dracula编辑器主题和material-icon-theme的图标主题的个人编辑器定制页面。
 
