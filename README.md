@@ -3,7 +3,7 @@
 
 [![Clean-Shot-2025-10-15-at-15-24-49-2x.png](https://i.postimg.cc/44MnHnQx/Clean-Shot-2025-10-15-at-15-24-49-2x.png)](https://postimg.cc/CdGwWh23)
 
-### 基于Dracula编辑器主题和material-icon-theme的图标主题的个人编辑器定制页面。
+### 个人编辑器定制页面
 
 > settings.json 文件物理存储位置
 >
