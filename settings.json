@@ -1,90 +1,88 @@
 {
   // ============================================================
   // Author: Tickmao
-  // Emial: lyle.lypm@gmail.com
+  // Email: lyle.lypm@gmail.com
   // Blog: https://tickmao.com
   // ============================================================
 
   // ============================================================
   // 👁️ 外观与界面（UI / Theme）
   // ============================================================
-  "editor.cursorSmoothCaretAnimation": "on", // 光标移动时平滑动画，增强视觉流畅感
-  "editor.fontFamily": "Fira Code", // 专用字体，支持连字
-  "editor.fontLigatures": "'ss01','ss02','ss03','ss06','zero'", // 启用连字特性，让符号更易读
-  "editor.lineHeight": 1.48, // 行高调整，提高代码阅读体验
-  "editor.fontSize": 14, // 字号设置，兼顾可读性与信息密度
-  "editor.guides.bracketPairs": "active", // 高亮匹配括号，提高代码结构可视性
-  "editor.renderWhitespace": "boundary", // 显示缩进边界（不显示所有空格），保持清爽
-  "workbench.iconTheme": "catppuccin-latte", // 个性化图标主题
+  "editor.cursorSmoothCaretAnimation": "on", // 光标平滑移动动画
+  "editor.fontFamily": "Fira Code", // 编辑器字体
+  "editor.fontLigatures": "'ss01','ss02','ss03','ss06','zero'", // 启用连字
+  "editor.lineHeight": 1.48, // 行高
+  "editor.fontSize": 14, // 字号
+  "editor.guides.bracketPairs": "active", // 高亮匹配括号
+  "editor.renderWhitespace": "boundary", // 显示缩进边界空格
+  "workbench.iconTheme": "catppuccin-latte", // 文件图标主题
   "workbench.list.smoothScrolling": true, // 文件列表平滑滚动
-  "workbench.editor.tabActionLocation": "left", // 文件标签的操作按钮放在左侧
-  "workbench.sideBar.location": "right", // 侧边栏固定在右侧，个人化布局偏好
-  "workbench.tree.enableStickyScroll": true, // 在文件树中固定文件夹标题
-  "workbench.editor.enablePreview": false, // 禁用预览模式，点击文件直接打开
-  "window.titleBarStyle": "custom", // 自定义标题栏样式，更贴合主题
-  "window.autoDetectColorScheme": true, // 跟随系统暗/亮模式
+  "workbench.editor.tabActionLocation": "left", // 标签操作按钮放在左侧
+  "workbench.sideBar.location": "right", // 侧边栏固定在右侧
+  "workbench.tree.enableStickyScroll": true, // 文件树标题固定
+  "workbench.editor.enablePreview": false, // 禁用编辑器预览
+  "window.titleBarStyle": "custom", // 自定义标题栏样式
+  "window.autoDetectColorScheme": true, // 跟随系统主题
   "workbench.preferredLightColorTheme": "Catppuccin Latte", // 明亮主题
   "workbench.preferredDarkColorTheme": "Catppuccin Macchiato", // 暗色主题
-  "workbench.editor.revealIfOpen": true, // 打开文件时自动聚焦已有标签
-  "workbench.editor.closeEmptyGroups": true, // 自动关闭空编辑器组
-  "workbench.editor.untitled.hint": "hidden", // 隐藏新建文件提示，更整洁
-  "workbench.startupEditor": "none", // 启动时不显示欢迎页
-  "workbench.activityBar.visible": true, // 确保左侧图标栏始终可见
-  "workbench.commandPalette.preserveInput": true, // 保留命令面板输入历史，提升操作效率
-  "window.nativeTabs": true, // macOS 原生标签支持
-  "window.title": "${rootName}", // 窗口标题显示当前项目名称
+  "workbench.editor.revealIfOpen": true, // 打开文件时聚焦已有标签
+  "workbench.editor.closeEmptyGroups": true, // 空编辑器组自动关闭
+  "workbench.editor.untitled.hint": "hidden", // 隐藏新建文件提示
+  "workbench.startupEditor": "none", // 启动不打开文件
+  "workbench.commandPalette.preserveInput": true, // 保留命令面板输入历史
+  "window.nativeTabs": true, // macOS 原生标签
+  "window.title": "${rootName}", // 窗口标题显示当前项目名
 
   // ============================================================
-  // ✍️ 编辑器行为（体验 + 生产力）
+  // ✍️ 编辑器行为（体验与生产力）
   // ============================================================
-  "editor.wordWrap": "on", // 自动换行，避免超长行影响阅读
+  "editor.wordWrap": "on", // 自动换行
   "editor.lineNumbers": "on", // 显示行号
-  "editor.minimap.enabled": false, // 禁用右侧缩略图，减少干扰
-  "editor.smoothScrolling": true, // 平滑滚动体验
-  "editor.cursorBlinking": "expand", // 光标动画样式
-  "editor.hover.sticky": true, // 代码悬停提示不易消失
-  "editor.stickyScroll.enabled": true, // 粘性滚动，保持函数头部可见
-  "editor.tabSize": 2, // 统一使用 2 空格缩进
+  "editor.minimap.enabled": false, // 禁用右侧缩略图
+  "editor.smoothScrolling": true, // 平滑滚动
+  "editor.cursorBlinking": "expand", // 光标闪烁样式
+  "editor.hover.sticky": true, // 悬停提示固定
+  "editor.stickyScroll.enabled": true, // 粘性滚动保持函数头可见
+  "editor.tabSize": 2, // Tab 显示为 2 个空格
   "editor.insertSpaces": true, // 使用空格代替 Tab
-  "editor.detectIndentation": false, // 禁止自动检测缩进，确保一致
-  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?", // 定义单词分隔符
-  "editor.multiCursorModifier": "ctrlCmd", // Mac 使用 Cmd 添加多光标
-  "editor.inlineSuggest.enabled": true, // 启用智能内联补全（AI 提示）
-  "editor.suggestSelection": "first", // 默认选择第一个建议
-  "editor.quickSuggestionsDelay": 0, // 提示响应更快
+  "editor.detectIndentation": false, // 禁止自动检测缩进
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?", // 单词分隔符
+  "editor.multiCursorModifier": "ctrlCmd", // Mac Cmd 添加多光标
+  "editor.inlineSuggest.enabled": true, // 内联智能提示
+  "editor.suggestSelection": "first", // 默认选中第一个建议
+  "editor.quickSuggestionsDelay": 0, // 提示延迟 0 毫秒
   "editor.snippetSuggestions": "top", // 代码片段优先显示
-  "editor.parameterHints.enabled": true, // 启用参数提示
+  "editor.parameterHints.enabled": true, // 参数提示
   "editor.codeLens": true, // 显示引用/测试/类型提示
   "editor.linkedEditing": true, // 同步修改成对标签
   "editor.renderControlCharacters": false, // 不显示控制字符
-  "editor.glyphMargin": true, // 启用代码折叠与调试标记区
-  "editor.accessibilitySupport": "off", // 关闭辅助支持以提升性能
-  "editor.autoClosingBrackets": "always", // 自动补全括号
-  "editor.autoClosingQuotes": "always", // 自动补全引号
-  "editor.autoClosingOvertype": "always", // 输入右括号时自动覆盖旧的
-  "editor.autoSurround": "quotes", // 自动包裹选中文本
-  "editor.autoIndent": "advanced", // 根据上下文智能缩进
-  "breadcrumbs.enabled": true, // 启用路径导航（面包屑）
+  "editor.glyphMargin": true, // 启用折叠/断点标记区
+  "editor.accessibilitySupport": "off", // 关闭辅助模式提升性能
+  "editor.autoClosingBrackets": "always", // 自动闭合括号
+  "editor.autoClosingQuotes": "always", // 自动闭合引号
+  "editor.autoClosingOvertype": "always", // 输入右括号时覆盖旧字符
+  "editor.autoSurround": "quotes", // 自动包裹选中内容
+  "editor.autoIndent": "advanced", // 智能缩进
+  "breadcrumbs.enabled": true, // 面包屑导航
   "editor.folding": true, // 启用代码折叠
   "editor.foldingImportsByDefault": true, // 默认折叠 import 区域
   "editor.bracketPairColorization.enabled": true, // 彩色括号匹配
-  "editor.unicodeHighlight.invisibleCharacters": false, // 不高亮不可见字符（避免干扰）
-  "explorer.autoReveal": false, // 防止频繁跳转文件树位置
+  "editor.unicodeHighlight.invisibleCharacters": false, // 不高亮不可见字符
+  "explorer.autoReveal": false, // 文件树不自动跳转
 
   // ============================================================
   // 💾 文件与保存
   // ============================================================
-  "files.autoSave": "onFocusChange", // 切出窗口自动保存文件
-  "files.trimTrailingWhitespace": true, // 删除行尾多余空格
-  "files.insertFinalNewline": true, // 文件末尾自动添加换行
-  "files.eol": "\n", // 强制使用 LF（跨平台一致）
-  "files.exclude": {
-    "node_modules": true,
-    "dist": true,
-    "build": true
-  },
-  "files.simpleDialog.enable": true, // 简化保存/打开文件弹窗
+  "files.autoSave": "onFocusChange", // 切出窗口自动保存
+  "files.trimTrailingWhitespace": true, // 删除行尾空格
+  "files.insertFinalNewline": true, // 文件末尾自动换行
+  "files.eol": "\n", // LF 换行
+  "files.exclude": { "node_modules": true, "dist": true, "build": true }, // 隐藏无关文件
+  "files.simpleDialog.enable": true, // 简化文件对话框
+  "files.autoGuessEncoding": true, // 自动检测文件编码
+  "files.associations": { "*.mdx": "markdown", "*.env.*": "dotenv" }, // 文件类型关联
   "search.exclude": {
+    // 搜索排除目录
     "**/node_modules": true,
     "**/dist": true,
     "**/build": true,
@@ -94,39 +92,59 @@
     "**/.next": true,
     "**/out": true
   },
-  "files.autoGuessEncoding": true, // 自动检测文件编码
-  "files.associations": {
-    "*.mdx": "markdown", // 指定特殊文件类型
-    "*.env.*": "dotenv"
-  },
 
   // ============================================================
   // 🎨 格式化 / Prettier / ESLint
   // ============================================================
-  "editor.formatOnSave": true, // 保存时自动格式化代码
+  "editor.formatOnSave": true, // 保存时格式化
+  "editor.formatOnPaste": true, // 粘贴时格式化
+  "editor.formatOnType": true, // 输入时格式化
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit", // 保存时自动修复问题
-    "source.fixAll.eslint": "explicit", // 启用 ESLint 自动修复
-    "source.organizeImports": "never" // 不自动整理 import（由开发者控制）
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // 默认格式化器：Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 默认 Prettier
 
-  // 针对语言的格式化器指定
+  // 针对语言指定 Prettier
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[less]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[mdx]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[graphql]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[svelte]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
-  // Prettier 样式规范（与企业规范对齐）
+  // Prettier 全局规则
+  "prettier.useTabs": false, // 使用空格而非 Tab
+  "prettier.tabWidth": 2, // Tab 等价空格数
   "prettier.singleQuote": true, // 使用单引号
   "prettier.semi": false, // 不加分号
-  "prettier.printWidth": 100, // 每行最大长度
-  "prettier.trailingComma": "none", // 不添加尾逗号
+  "prettier.trailingComma": "es5", // 尾逗号
+  "prettier.bracketSpacing": true, // 对象括号空格
+  "prettier.arrowParens": "always", // 箭头函数括号
+  "prettier.printWidth": 100, // 最大行宽
+  "prettier.proseWrap": "always", // Markdown 自动换行
+  "prettier.htmlWhitespaceSensitivity": "css", // HTML 空格敏感度
+  "prettier.endOfLine": "lf", // 强制 LF
+  "prettier.requireConfig": false, // 无配置也可用
+  "prettier.jsxSingleQuote": false, // JSX 双引号
+  "prettier.quoteProps": "as-needed", // 对象属性按需引号
+  "prettier.yamlBracketSpacing": true, // YAML 大括号空格
+  "prettier.yamlSortKeys": false, // YAML 不排序键
+  "prettier.markdownWrap": 80, // Markdown 换行宽度
+  "prettier.markdownCodeBlockStyle": "fenced", // Markdown 代码块使用 ``` 包裹
 
-  // ESLint 设置（代码质量保障）
+  // ESLint 校验增强
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -136,59 +154,58 @@
     "html",
     "json",
     "markdown",
-    "yaml"
+    "yaml",
+    "svelte",
+    "graphql"
   ],
-  "eslint.run": "onSave", // 保存时运行
-  "eslint.alwaysShowStatus": true, // 状态栏显示 ESLint 状态
+  "eslint.run": "onSave", // 保存时运行 ESLint
+  "eslint.alwaysShowStatus": true, // 状态栏显示 ESLint
   "eslint.quiet": true, // 只显示错误
+  "eslint.codeActionsOnSave.mode": "all", // 保存时修复所有问题
   "eslint.rules.customizations": [
-    { "rule": "*quotes", "severity": "off" },
-    { "rule": "*semi", "severity": "off" }
+    { "rule": "*quotes", "severity": "off" }, // 关闭单引号警告
+    { "rule": "*semi", "severity": "off" } // 关闭分号警告
   ],
-  "editor.formatOnPaste": true, // 粘贴时自动格式化
-  "editor.formatOnType": true, // 输入时自动格式化
-  "prettier.proseWrap": "always", // 文本内容（如 Markdown）自动换行
-  "eslint.codeActionsOnSave.mode": "all", // 优化 ESLint 修复范围
 
   // ============================================================
   // 🧠 Git / 源码管理
   // ============================================================
-  "git.autofetch": true, // 自动获取远程更新
-  "git.confirmSync": false, // 同步不弹确认框
+  "git.autofetch": true, // 自动拉取远程更新
+  "git.confirmSync": false, // 同步不弹确认
   "git.enableSmartCommit": true, // 允许空提交
   "git.untrackedChanges": "separate", // 未跟踪文件单独显示
   "scm.diffDecorationsGutterWidth": 2, // gutter 标记宽度
-  "git.openRepositoryInParentFolders": "always", // 自动识别父级 Git 仓库
-  "git.decorations.enabled": true, // 在资源管理器中显示 Git 状态
-  "git.pruneOnFetch": true, // 自动清理无效远程分支
-  "gitlens.hovers.currentLine.over": "line", // GitLens 悬停显示行变更信息
+  "git.openRepositoryInParentFolders": "always", // 自动识别父级仓库
+  "git.decorations.enabled": true, // 文件资源管理器显示 Git 状态
+  "git.pruneOnFetch": true, // 自动清理远程分支
+  "gitlens.hovers.currentLine.over": "line", // GitLens 悬停显示行变更
   "gitlens.codeLens.enabled": true, // 启用代码级历史查看
 
   // ============================================================
   // 💻 终端
   // ============================================================
   "terminal.integrated.cursorBlinking": true, // 光标闪烁
-  "terminal.integrated.cursorStyle": "line", // 光标样式为竖线
-  "terminal.integrated.fontWeight": "300", // 终端字体轻量
-  "terminal.integrated.tabs.enabled": true, // 启用多标签终端
-  "terminal.integrated.scrollback": 5000, // 扩大可滚动缓冲区
+  "terminal.integrated.cursorStyle": "line", // 光标为竖线
+  "terminal.integrated.fontWeight": "300", // 字体轻量
+  "terminal.integrated.tabs.enabled": true, // 多标签终端
+  "terminal.integrated.scrollback": 5000, // 滚动缓冲区
   "terminal.integrated.defaultProfile.linux": "zsh", // Linux 默认 shell
   "terminal.integrated.defaultProfile.osx": "zsh", // macOS 默认 shell
   "terminal.integrated.defaultProfile.windows": "Command Prompt", // Windows 默认 shell
   "terminal.integrated.allowChords": false, // 禁止快捷键冲突
   "terminal.integrated.confirmOnKill": "never", // 关闭终端不需确认
-  "terminal.integrated.env.osx": {
-    "NODE_ENV": "development"
-  }, // 默认开发环境变量
+  "terminal.integrated.env.osx": { "NODE_ENV": "development" }, // macOS 环境变量
+  "terminal.integrated.env.linux": { "NODE_ENV": "development" }, // Linux 环境变量
+  "terminal.integrated.env.windows": { "NODE_ENV": "development" }, // Windows 环境变量
 
   // ============================================================
-  // 🧩 扩展配置（智能与拼写支持）
+  // 🧩 扩展配置（Copilot / 拼写 / Emmet）
   // ============================================================
-  "github.copilot.enable": { "*": true, "markdown": true }, // 启用 Copilot 支持所有语言
-  "github.copilot.suggestionCount": 3, // 每次提供多个建议，提高智能比选效率
-  "github.copilot.inlineSuggest.enable": true, // 启用内联建议
-  "editor.inlineSuggest.showToolbar": "onHover", // 悬停显示 AI 工具栏
-  "cSpell.language": "en,en-US", // 英文拼写检查
+  "github.copilot.enable": { "*": true, "markdown": true }, // Copilot 所有语言启用
+  "github.copilot.suggestionCount": 3, // 每次多条建议
+  "github.copilot.inlineSuggest.enable": true, // 内联建议
+  "editor.inlineSuggest.showToolbar": "onHover", // 悬停显示工具栏
+  "cSpell.language": "en,en-US", // 拼写检查语言
   "cSpell.ignoreWords": [
     "vitepress",
     "vuepress",
@@ -199,32 +216,29 @@
     "vite",
     "vetur",
     "vuex"
-  ],
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "javascript": "javascriptreact"
-  },
-  "emmet.triggerExpansionOnTab": true, // Tab 键触发 Emmet 展开
+  ], // 拼写忽略词
+  "emmet.includeLanguages": { "vue-html": "html", "javascript": "javascriptreact" }, // Emmet 支持语言
+  "emmet.triggerExpansionOnTab": true, // Tab 展开 Emmet
 
   // ============================================================
   // 🧱 Vue / Volar / Tailwind
   // ============================================================
-  "vetur.format.defaultFormatter.html": "prettyhtml", // Vetur 格式化 HTML
-  "vetur.format.defaultFormatter.js": "prettier-eslint", // Vetur 格式化 JS
-  "volar.completion.preferredTagNameCase": "pascal", // Vue 组件自动补全使用 PascalCase
+  "vetur.format.defaultFormatter.html": "prettyhtml", // Vetur HTML 格式化
+  "vetur.format.defaultFormatter.js": "prettier-eslint", // Vetur JS 格式化
+  "volar.completion.preferredTagNameCase": "pascal", // Vue 组件 PascalCase
   "volar.autoCompleteRefs": false, // 禁用 ref 自动补全
-  "css.lint.unknownAtRules": "ignore", // 忽略未知 CSS 规则（如 Tailwind）
-  "tailwindCSS.colorDecorators": true, // 显示类名对应颜色
-  "tailwindCSS.emmetCompletions": true, // 启用 Tailwind Emmet 支持
-  "tailwindCSS.experimental.classRegex": [["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]],
+  "css.lint.unknownAtRules": "ignore", // 忽略 Tailwind 未知规则
+  "tailwindCSS.colorDecorators": true, // 显示 Tailwind 类颜色
+  "tailwindCSS.emmetCompletions": true, // Tailwind Emmet
+  "tailwindCSS.experimental.classRegex": [["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]], // clsx 识别
 
   // ============================================================
   // 📁 文件嵌套（File Nesting）
   // ============================================================
   "explorer.fileNesting.enabled": true, // 启用文件嵌套
   "explorer.fileNesting.expand": false, // 默认折叠嵌套
-  "explorer.compactFolders": false, // 文件夹显示展开结构，减少误操作
-  "explorer.confirmDragAndDrop": false, // 拖拽文件不需确认
+  "explorer.compactFolders": false, // 文件夹完整展开
+  "explorer.confirmDragAndDrop": false, // 拖拽不需确认
   "explorer.fileNesting.patterns": {
     "*.ts": "$(capture).test.ts, $(capture).spec.ts, $(capture).d.ts",
     "*.vue": "$(capture).ts, $(capture).scss, $(capture).css, $(capture).test.ts",
@@ -232,16 +246,19 @@
   },
 
   // ============================================================
-  // ⚙️ 性能与安全
+  // ⚙️ 性能与安全（增强）
   // ============================================================
   "workbench.editor.highlightModifiedTabs": true, // 修改文件高亮
-  "workbench.editor.limit.enabled": true, // 限制打开的编辑器数量
+  "workbench.editor.limit.enabled": true, // 限制标签数量
   "workbench.editor.limit.value": 10, // 最大标签数
-  "workbench.editor.limit.perEditorGroup": true, // 每组标签限制
-  "security.workspace.trust.untrustedFiles": "open", // 打开不受信任文件时提示
-  "editor.largeFileOptimizations": true, // 优化大文件打开性能
-  "typescript.tsserver.maxTsServerMemory": 4096, // 提升 TypeScript 服务内存上限
-  "javascript.suggest.autoImports": true, // 自动导入提示
-  "typescript.suggest.autoImports": true, // 自动导入提示
-  "typescript.updateImportsOnFileMove.enabled": "always" // 文件重命名时自动更新 import
+  "workbench.editor.limit.perEditorGroup": true, // 每组限制
+  "security.workspace.trust.untrustedFiles": "open", // 不信任文件提示
+  "editor.largeFileOptimizations": true, // 大文件优化
+  "files.maxMemoryForLargeFilesMB": 4096, // 大文件内存
+  "editor.maxTokenizationLineLength": 20000, // 最大解析行长度
+  "json.maxItemsComputed": 100000, // JSON 最大节点数
+  "yaml.maxItemsComputed": 100000, // YAML 最大节点数
+  "markdown.maxTokens": 200000, // Markdown 最大解析 tokens
+  "editor.semanticHighlighting.enabled": true, // 启用语义高亮
+  "redhat.telemetry.enabled": true // 启用 telemetry
 }
